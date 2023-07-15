@@ -321,7 +321,6 @@ header {
 .examplesArea {
   justify-content: space-between;
   margin-block: 40px;
-  flex: wrap;
 }
 
 .examplesCard {
@@ -533,5 +532,47 @@ footer {
   .subFooterContainer {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  /* Header Section  */
+  .headerSection {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .headerLeft {
+    max-width: 100%;
+  }
+
+  .headerRight {
+    width: 100%;
+  }
+
+  .headerRight img {
+    width: 100%;
+  }
+
+  /* Company */
+  .logos {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  /* Feature Section  */
+  .featuresArea {
+    gap: 30px;
+  }
+
+  /* Example Section */
+
+  .examplesArea {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .examplesCard {
+    /* width: calc(50%-10px); */
+    width: 49%;
   }
 }
